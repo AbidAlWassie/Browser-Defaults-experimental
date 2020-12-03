@@ -1,0 +1,75 @@
+a.clear-defaults {
+  text-decoration: none;
+}
+
+.clr-orange {
+  color: #ED694C;
+}
+
+.clr-yellow {
+  color: #F1E300;
+}
+
+.bg-orange {
+  background: #ED694C;
+}
+
+.bg-yellow {
+  background: #F1E300;
+}
+
+body {
+  background: #DEDDDE;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+}
+
+.card1, .card2 {
+  padding: 10px 20px;
+}
+
+.card1 {
+  background: #F3F3F3;
+}
+
+.card2 {
+  background: #647DBA;
+}
+
+.btn {
+  border: none;
+  padding: 5px;
+}
+
+.btn.round {
+  border-radius: 20px;
+}
+
+.bg-orange, .clr-orange:focus {
+  outline: 3px solid #ED694C;
+  outline-offset: 3px;
+}
+
+.bg-yellow, .clr-yellow:focus {
+  outline: 3px solid #F1E300;
+  outline-offset: 3px;
+}
+
+button {
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+button.bg-orange:focus {
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #ED694C;
+}
+
+button.bg-yellow:focus {
+  box-shadow: 0 0 0 3px #647DBA, 0 0 0 6px #F1E300;
+}
+
+/*# sourceMappingURL=style.css.map */
