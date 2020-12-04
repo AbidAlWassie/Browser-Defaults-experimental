@@ -3,6 +3,7 @@ $clr-white: #F3F3F3;
 $clr-orange: #ED694C;
 $clr-purple: #647DBA;
 $clr-yellow: #F1E300;
+$clr-lightblue: #5fa8d3;
 
 a.clear-defaults {
   text-decoration: none;
@@ -53,13 +54,16 @@ form {
   width: 50%;
   position: relative;
   height: 50px;
+  overflow: hidden;
 }
 
 form input {
   width: 100%;
   height: 100%;
   color: #595f6e;
+  padding-top: 10px;
   border: none;
+  outline: none;
 }
 
 form label {
@@ -80,8 +84,9 @@ form label::after {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #5fa8d3;
+  border-bottom: 3px solid $clr-lightblue;
   transform: translateX(-100%);
+  transition: transform 300ms ease-in;
 }
 
 .name-content {
@@ -91,6 +96,12 @@ form label::after {
   transition: all 300ms ease;
 }
 
-form input:focus + .label-name .name-content {
+form input:focus + .label-name .name-content, form input:valid + .label-name .name-content {
   transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-lightblue;
+}
+
+form input:focus + .label-name::after, .form input:valid + .label-name::after {
+  transform: translateX(0);
 }
