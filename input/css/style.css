@@ -33,6 +33,15 @@ body {
   border-radius: 20px;
 }
 
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
 form {
   width: 50%;
   position: relative;
@@ -41,7 +50,9 @@ form {
 
 form input {
   width: 100%;
+  height: 100%;
   color: #595f6e;
+  border: none;
 }
 
 form label {
@@ -50,6 +61,30 @@ form label {
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+form label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+}
+
+.name-content {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+form input:focus + .label-name .name-content {
+  transform: translateY(-150%);
 }
 
 /*# sourceMappingURL=style.css.map */
