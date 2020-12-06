@@ -75,7 +75,7 @@ form label::after {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #5fa8d3;
+  border-bottom: 3px solid #ED694C;
   transform: translateX(-100%);
   transition: transform 300ms ease-in;
 }
@@ -90,7 +90,7 @@ form label::after {
 form input:focus + .label-name .name-content, form input:valid + .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
-  color: #5fa8d3;
+  color: #ED694C;
 }
 
 form input:focus + .label-name::after, .form input:valid + .label-name::after {
