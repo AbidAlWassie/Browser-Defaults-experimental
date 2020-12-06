@@ -4,6 +4,8 @@ $clr-orange: #ED694C;
 $clr-purple: #647DBA;
 $clr-yellow: #F1E300;
 $clr-lightblue: #5fa8d3;
+$clr-blue: #3391e0;
+$clr-green: #53ce40;
 
 a.clear-defaults {
   text-decoration: none;
@@ -84,7 +86,7 @@ form label::after {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid $clr-orange;
+  border-bottom: 3px solid $clr-blue;
   transform: translateX(-100%);
   transition: transform 300ms ease-in;
 }
@@ -99,7 +101,7 @@ form label::after {
 form input:focus + .label-name .name-content, form input:valid + .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
-  color: $clr-orange;
+  color: $clr-blue;
 }
 
 form input:focus + .label-name::after, .form input:valid + .label-name::after {
