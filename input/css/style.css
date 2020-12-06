@@ -42,14 +42,14 @@ body {
   text-align: center;
 }
 
-form {
-  width: 50%;
+.input-item {
+  width: 400px;
   position: relative;
   height: 50px;
   overflow: hidden;
 }
 
-form input {
+.input-item input {
   width: 100%;
   height: 100%;
   color: #595f6e;
@@ -58,7 +58,7 @@ form input {
   outline: none;
 }
 
-form label {
+.input-item label {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -68,7 +68,7 @@ form label {
   border-bottom: 1px solid black;
 }
 
-form label::after {
+.input-item label::after {
   content: "";
   position: absolute;
   left: 0;
@@ -87,13 +87,13 @@ form label::after {
   transition: all 300ms ease;
 }
 
-form input:focus + .label-name .name-content, form input:valid + .label-name .name-content {
+.input-item input:focus + .label-name .name-content, .input-item input:valid + .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
   color: #3391e0;
 }
 
-form input:focus + .label-name::after, .form input:valid + .label-name::after {
+.input-item input:focus + .label-name::after, .input-item input:valid + .label-name::after {
   transform: translateX(0);
 }
 
