@@ -47,6 +47,7 @@ body {
   position: relative;
   height: 50px;
   overflow: hidden;
+  margin-top: 15px;
 }
 
 .input-item input {
