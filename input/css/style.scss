@@ -109,3 +109,13 @@ body {
 .input-item input:focus + .label-name::after, .input-item input:valid + .label-name::after {
   transform: translateX(0);
 }
+
+.errorMessage {
+  position: relative;
+}
+
+.errorMessage .material-icons {
+  top: 0;
+  right: 0;
+  position: absolute;
+}

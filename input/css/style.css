@@ -98,4 +98,14 @@ body {
   transform: translateX(0);
 }
 
+.errorMessage {
+  position: relative;
+}
+
+.errorMessage .material-icons {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
 /*# sourceMappingURL=style.css.map */
