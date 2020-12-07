@@ -121,7 +121,20 @@ body {
   right: 0;
   position: absolute;
 }
-//
-//.material-icons.icon-info, .material-icons.icon-okay {
-//  display: none;
-//}
+
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

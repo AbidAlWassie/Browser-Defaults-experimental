@@ -4,16 +4,16 @@ window.onload = function () {
   const signUpForm = document.getElementById("formSignUp");
   const inputName = document.querySelector(".inputName");
   const inputEmail = document.querySelector(".inputEmail");
+  const inputPassword = document.querySelector(".inputPassword");
+  const inputConfirmPassword = document.querySelector(".inputConfirmPassword");
   
-  inputName.addEventListener("blur", (e) => {
-    // inputName.style.color = "#6d6d6d";
-    console.log("1");
-    e.preventDefault();
-  });
+  inputName.addEventListener("blur", inputLeave);
+  inputEmail.addEventListener("blur", inputLeave);
+  inputPassword.addEventListener("blur", inputLeave);
+  inputConfirmPassword.addEventListener("blur", inputLeave);
   
-  inputEmail.addEventListener("blur", (e) => {
-    // inputEmail.style.color = "#6d6d6d";
-    console.log("2");
+  function inputLeave(e) {
+    console.log("left")
     e.preventDefault();
-  });
+  }
 }

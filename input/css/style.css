@@ -109,4 +109,20 @@ body {
   position: absolute;
 }
 
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=style.css.map */

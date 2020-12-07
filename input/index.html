@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-  <h3 class="heading">Styling Inputs</h3>
+  <h3 class="heading">Create an account</h3>
   <div class="input-container">
     <form action="" id="formSignUp">
       <div class="input-item">
@@ -21,9 +21,9 @@
       </div>
 
       <div class="errorMessage">
-        <i class="material-icons icon-info">info</i>
-        <i class="material-icons icon-okay">check_circle</i>
-        <p class="message-text">Username cannot be blank</p>
+        <i class="material-icons icon-info none">info</i>
+        <i class="material-icons icon-okay none">check_circle</i>
+        <p class="message-text hidden">Username cannot be blank</p>
       </div>
 
       <div class="input-item">
@@ -33,11 +33,39 @@
         </label>
       </div>
 
-    <div class="errorMessage">
-      <i class="material-icons icon-info">info</i>
-      <i class="material-icons icon-okay">check_circle</i>
-      <p class="message-text">Password cannot be blank</p>
-    </div>
+      <div class="errorMessage">
+        <i class="material-icons icon-info none">info</i>
+        <i class="material-icons icon-okay none">check_circle</i>
+        <p class="message-text hidden">Email cannot be blank</p>
+      </div>
+
+      <div class="input-item">
+        <input type="password" id="email" class="inputPassword" name="password" required>
+        <label for="name" class="label-name">
+          <span class="name-content">Password</span>
+        </label>
+      </div>
+
+      <div class="errorMessage">
+        <i class="material-icons icon-info none">info</i>
+        <i class="material-icons icon-okay none">check_circle</i>
+        <p class="message-text hidden">Password cannot be blank</p>
+      </div>
+
+      <div class="input-item">
+        <input type="password" id="email" class="inputConfirmPassword" name="password" required>
+        <label for="name" class="label-name">
+          <span class="name-content">Confirm Password</span>
+        </label>
+      </div>
+
+      <div class="errorMessage">
+        <i class="material-icons icon-info none">info</i>
+        <i class="material-icons icon-okay none">check_circle</i>
+        <p class="message-text hidden">Cannot be blank</p>
+      </div>
+
+      <button type="submit">Sign up</button>
     </form>
   </div>
 </div>
