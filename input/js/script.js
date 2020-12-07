@@ -6,6 +6,7 @@ window.onload = function () {
   const inputEmail = document.querySelector(".inputEmail");
   const inputPassword = document.querySelector(".inputPassword");
   const inputConfirmPassword = document.querySelector(".inputConfirmPassword");
+  const errorMessage = document.querySelectorAll(".errorMessage");
   
   inputName.addEventListener("blur", inputLeave);
   inputEmail.addEventListener("blur", inputLeave);
@@ -14,6 +15,7 @@ window.onload = function () {
   
   function inputLeave(e) {
     console.log("left")
+    errorMessage.className = "errorMessage success";
     e.preventDefault();
   }
 }

@@ -122,6 +122,15 @@ body {
   position: absolute;
 }
 
+.errorMessage.success .icon-okay {
+  color: $clr-blue;
+  visibility: visible;
+}
+
+.icon-info, .icon-okay {
+  visibility: hidden;
+}
+
 
 .block {
   display: block !important;
