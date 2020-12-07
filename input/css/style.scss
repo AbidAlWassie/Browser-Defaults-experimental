@@ -1,4 +1,5 @@
-$clr-grey: #DEDDDE;
+$clr-lightgrey: #DEDDDE;
+$clr-grey: #b4b4b4;
 $clr-darkgrey: #6d6d6d;
 $clr-white: #F3F3F3;
 $clr-orange: #ED694C;
@@ -78,14 +79,14 @@ body {
   height: 100%;
   //background: #ED694C;
   pointer-events: none;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid $clr-grey;
 }
 
 .input-item label::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -3px;
   height: 100%;
   width: 100%;
   border-bottom: 3px solid $clr-blue;
@@ -112,10 +113,15 @@ body {
 
 .errorMessage {
   position: relative;
+  color: $clr-grey;
 }
 
 .errorMessage .material-icons {
-  top: -40px;
+  top: -45px;
   right: 0;
   position: absolute;
 }
+//
+//.material-icons.icon-info, .material-icons.icon-okay {
+//  display: none;
+//}
