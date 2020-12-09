@@ -14,8 +14,7 @@ window.onload = function () {
   inputConfirmPassword.addEventListener("blur", inputLeave);
   
   function inputLeave(e) {
-    console.log("left")
-    errorMessage.className = "errorMessage success";
+    // if ()
     e.preventDefault();
   }
 }

@@ -7,6 +7,7 @@ $clr-purple: #647DBA;
 $clr-yellow: #F1E300;
 $clr-lightblue: #5fa8d3;
 $clr-blue: #3391e0;
+$clr-red: #e03333;
 $clr-green: #53ce40;
 
 a.clear-defaults {
@@ -122,8 +123,27 @@ body {
   position: absolute;
 }
 
+.form-control.success {
+
+}
+
 .errorMessage.success .icon-okay {
   color: $clr-blue;
+  visibility: visible;
+}
+
+//.errorMessage.error .icon-okay {
+//  color: $clr-red;
+//  visibility: visible;
+//}
+
+//.errorMessage.success .icon-info {
+//  color: $clr-blue;
+//  visibility: visible;
+//}
+
+.errorMessage.error .icon-info {
+  color: $clr-red;
   visibility: visible;
 }
 

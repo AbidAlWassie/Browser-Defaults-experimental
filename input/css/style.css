@@ -114,6 +114,11 @@ body {
   visibility: visible;
 }
 
+.errorMessage.error .icon-info {
+  color: #e03333;
+  visibility: visible;
+}
+
 .icon-info, .icon-okay {
   visibility: hidden;
 }
