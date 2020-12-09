@@ -109,12 +109,34 @@ body {
   position: absolute;
 }
 
-.errorMessage.success .icon-okay {
+.form-control.success .input-item label::after {
+  transform: translateX(0);
+  border-bottom: 3px solid #3391e0 !important;
+}
+
+.form-control.success .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #3391e0 !important;
+}
+
+.form-control.success .icon-okay {
   color: #3391e0;
   visibility: visible;
 }
 
-.errorMessage.error .icon-info {
+.form-control.error .input-item label::after {
+  transform: translateX(0);
+  border-bottom: 3px solid #e03333 !important;
+}
+
+.form-control.error .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #e03333 !important;
+}
+
+.form-control.error .icon-info {
   color: #e03333;
   visibility: visible;
 }

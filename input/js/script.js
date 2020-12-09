@@ -14,6 +14,7 @@ window.onload = function () {
   inputConfirmPassword.addEventListener("blur", inputLeave);
   
   function inputLeave(e) {
+    console.log("left")
     // if ()
     e.preventDefault();
   }

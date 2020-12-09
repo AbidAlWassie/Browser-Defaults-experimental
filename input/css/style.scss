@@ -127,7 +127,18 @@ body {
 
 }
 
-.errorMessage.success .icon-okay {
+.form-control.success .input-item label::after{
+  transform: translateX(0);
+  border-bottom: 3px solid $clr-blue !important;
+}
+
+.form-control.success .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-blue !important;
+}
+
+.form-control.success .icon-okay {
   color: $clr-blue;
   visibility: visible;
 }
@@ -142,7 +153,18 @@ body {
 //  visibility: visible;
 //}
 
-.errorMessage.error .icon-info {
+.form-control.error .input-item label::after{
+  transform: translateX(0);
+  border-bottom: 3px solid $clr-red !important;
+}
+
+.form-control.error .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-red !important;
+}
+
+.form-control.error .icon-info {
   color: $clr-red;
   visibility: visible;
 }
